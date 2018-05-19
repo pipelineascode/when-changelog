@@ -5,7 +5,7 @@ pipeline {
         stage('Example') {
 		
 			when{
-				changelog '.*DEPENDENCY.*'
+				changelog 'DEPENDENCY'
 			}
 		
             steps {                
