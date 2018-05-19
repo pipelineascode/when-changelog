@@ -5,12 +5,11 @@ pipeline {
         stage('Example') {
 		
 			when{
-				//buildingTag()
-				tag "7.0"
+				changeRequest title:"when-pr123"
 			}
 		
             steps {                
-                echo 'Hello World building tag'
+                echo 'Hello World changing request'
             }
         }
     }
