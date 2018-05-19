@@ -5,11 +5,11 @@ pipeline {
         stage('Example') {
 		
 			when{
-				changelog 'DEPENDENCY'
+				changeset "**/*.js
 			}
 		
             steps {                
-                echo 'Hello World 1'
+                echo 'Hello World JS'
             }
         }
     }
