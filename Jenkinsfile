@@ -5,11 +5,11 @@ pipeline {
         stage('Example') {
 		
 			when{
-				changeRequest()
+				changeRequest title:"when-pr"
 			}
 		
             steps {                
-                echo 'Hello World chaning request'
+                echo 'Hello World changing request'
             }
         }
     }
