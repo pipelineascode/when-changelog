@@ -5,12 +5,11 @@ pipeline {
         stage('Example') {
 		
 			when{
-				//buildingTag()
-				tag "7.0"
+				changeRequest()
 			}
 		
             steps {                
-                echo 'Hello World building tag'
+                echo 'Hello World chaning request'
             }
         }
     }
