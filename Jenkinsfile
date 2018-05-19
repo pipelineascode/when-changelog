@@ -5,11 +5,11 @@ pipeline {
         stage('Example') {
 		
 			when{
-				changeset glob: "*.js"
+				buildingTag()
 			}
 		
             steps {                
-                echo 'Hello World JS'
+                echo 'Hello World building tag'
             }
         }
     }
