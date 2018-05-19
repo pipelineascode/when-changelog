@@ -5,8 +5,8 @@ pipeline {
         stage('Example') {
 		
 			when{
-				buildingTag()
-				//tag "4.0"
+				//buildingTag()
+				tag "7.0"
 			}
 		
             steps {                
